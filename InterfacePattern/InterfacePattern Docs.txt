@@ -1,0 +1,8 @@
+Source : https://medium.com/@shub.sharma350/upgradability-patterns-in-solidity-part-1-13e23ce1f144
+Interface Upgradable Pattern:
+User always interact with the main contract which contains business logic.
+However, Main function relies on the interface to communicate with the implementation contract.
+
+ The main contract contains an upgradeTo method which allows the owner of the main contract to change the implementation address.
+
+We can only update logic in the function in this.
